@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "es2022": true
+    },
+    "extends": [
+        "eslint:recomended",
+        "plugin:@typescript-eslint/recomended",
+        "plugin:@typescript-eslint/recomended-requiring-type-checking",
+        "standard-with-typescript",
+        "plugin:react/recommended"
+    ],
+    "overides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "tsconfigRootDir":".",
+        "project": ["./tsconfig.json"],
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react"
+    ],
+    "rules": {
+    },
+    "settings":{
+        "react":{
+            "version": "detect"
+        }
+    }
+}
